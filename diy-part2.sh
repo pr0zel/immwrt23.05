@@ -18,3 +18,6 @@ sed -i 's/# CONFIG_CPU_FREQ_GOV_CONSERVATIVE is not set/CONFIG_CPU_FREQ_GOV_CONS
 
 #sed -i 's/PKG_VERSION:=8.051.02/PKG_VERSION:=8.052.01/g' package/kernel/r8168/Makefile
 #rm ./package/kernel/r8168/patches/001-r8168-add-LED-configuration-from-OF.patch
+
+echo "# CONFIG_NF_CONNTRACK_CHAIN_EVENTS is not set" >> target/linux/x86/64/config-5.15
+echo "# CONFIG_SHORTCUT_FE is not set" >> target/linux/x86/64/config-5.15
